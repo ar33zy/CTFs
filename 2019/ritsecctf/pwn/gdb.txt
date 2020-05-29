@@ -1,0 +1,434 @@
+Breakpoint 1 at [34m0x8048728[m
+
+Breakpoint 1, [34m0x08048728[m in [33mmain[m ()
+$1 = 0x46
+[Inferior 1 (process 5929) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/5929/maps'
+[1m[31m$eax   [0m: 0x46      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048775[m
+
+Breakpoint 1, [34m0x08048775[m in [33mmain[m ()
+$1 = 0x22
+[Inferior 1 (process 5952) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/5952/maps'
+[1m[31m$eax   [0m: 0x00000022
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049e58[m
+
+Breakpoint 1, [34m0x08049e58[m in [33mmain[m ()
+$1 = 0x29
+[Inferior 1 (process 5971) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/5971/maps'
+[1m[31m$eax   [0m: 0x00000029
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x80493ed[m
+
+Breakpoint 1, [34m0x080493ed[m in [33mmain[m ()
+$1 = 0x7c
+[Inferior 1 (process 5990) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/5990/maps'
+[1m[31m$eax   [0m: 0x7c      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x80492a4[m
+
+Breakpoint 1, [34m0x080492a4[m in [33mmain[m ()
+$1 = 0x2f
+[Inferior 1 (process 6009) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6009/maps'
+[1m[31m$eax   [0m: 0x0000002f
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049d01[m
+
+Breakpoint 1, [34m0x08049d01[m in [33mmain[m ()
+$1 = 0x66
+[Inferior 1 (process 6028) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6028/maps'
+[1m[31m$eax   [0m: 0x66      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049f85[m
+
+Breakpoint 1, [34m0x08049f85[m in [33mmain[m ()
+$1 = 0x2c
+[Inferior 1 (process 6047) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6047/maps'
+[1m[31m$eax   [0m: 0x0000002c
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049942[m
+
+Breakpoint 1, [34m0x08049942[m in [33mmain[m ()
+$1 = 0x3a
+[Inferior 1 (process 6066) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6066/maps'
+[1m[31m$eax   [0m: 0x3a      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048c22[m
+
+Breakpoint 1, [34m0x08048c22[m in [33mmain[m ()
+$1 = 0x50
+[Inferior 1 (process 6085) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6085/maps'
+[1m[31m$eax   [0m: 0x50      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x804903c[m
+
+Breakpoint 1, [34m0x0804903c[m in [33mmain[m ()
+$1 = 0x73
+[Inferior 1 (process 6104) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6104/maps'
+[1m[31m$eax   [0m: 0x73      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x804886a[m
+
+Breakpoint 1, [34m0x0804886a[m in [33mmain[m ()
+$1 = 0x55
+[Inferior 1 (process 6123) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6123/maps'
+[1m[31m$eax   [0m: 0x55      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049097[m
+
+Breakpoint 1, [34m0x08049097[m in [33mmain[m ()
+$1 = 0x55
+[Inferior 1 (process 6142) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6142/maps'
+[1m[31m$eax   [0m: 0x55      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x804995e[m
+
+Breakpoint 1, [34m0x0804995e[m in [33mmain[m ()
+$1 = 0x6d
+[Inferior 1 (process 6161) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6161/maps'
+[1m[31m$eax   [0m: 0x6d      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x80495d7[m
+
+Breakpoint 1, [34m0x080495d7[m in [33mmain[m ()
+$1 = 0x4b
+[Inferior 1 (process 6180) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6180/maps'
+[1m[31m$eax   [0m: 0x4b      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048ce6[m
+
+Breakpoint 1, [34m0x08048ce6[m in [33mmain[m ()
+$1 = 0x4c
+[Inferior 1 (process 6199) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6199/maps'
+[1m[31m$eax   [0m: 0x4c      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049314[m
+
+Breakpoint 1, [34m0x08049314[m in [33mmain[m ()
+$1 = 0x2a
+[Inferior 1 (process 6218) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6218/maps'
+[1m[31m$eax   [0m: 0x0000002a
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049513[m
+
+Breakpoint 1, [34m0x08049513[m in [33mmain[m ()
+$1 = 0x7a
+[Inferior 1 (process 6237) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6237/maps'
+[1m[31m$eax   [0m: 0x7a      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049583[m
+
+Breakpoint 1, [34m0x08049583[m in [33mmain[m ()
+$1 = 0x28
+[Inferior 1 (process 6256) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6256/maps'
+[1m[31m$eax   [0m: 0x00000028
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x80488be[m
+
+Breakpoint 1, [34m0x080488be[m in [33mmain[m ()
+$1 = 0x3b
+[Inferior 1 (process 6275) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6275/maps'
+[1m[31m$eax   [0m: 0x3b      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048cf4[m
+
+Breakpoint 1, [34m0x08048cf4[m in [33mmain[m ()
+$1 = 0x4e
+[Inferior 1 (process 6294) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6294/maps'
+[1m[31m$eax   [0m: 0x4e      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049ec8[m
+
+Breakpoint 1, [34m0x08049ec8[m in [33mmain[m ()
+$1 = 0x60
+[Inferior 1 (process 6313) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6313/maps'
+[1m[31m$eax   [0m: 0x60      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048c53[m
+
+Breakpoint 1, [34m0x08048c53[m in [33mmain[m ()
+$1 = 0x51
+[Inferior 1 (process 6332) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6332/maps'
+[1m[31m$eax   [0m: 0x51      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048a62[m
+
+Breakpoint 1, [34m0x08048a62[m in [33mmain[m ()
+$1 = 0x50
+[Inferior 1 (process 6351) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6351/maps'
+[1m[31m$eax   [0m: 0x50      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049265[m
+
+Breakpoint 1, [34m0x08049265[m in [33mmain[m ()
+$1 = 0x74
+[Inferior 1 (process 6370) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6370/maps'
+[1m[31m$eax   [0m: 0x74      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049ae6[m
+
+Breakpoint 1, [34m0x08049ae6[m in [33mmain[m ()
+$1 = 0x44
+[Inferior 1 (process 6389) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6389/maps'
+[1m[31m$eax   [0m: 0x44      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048cd1[m
+
+Breakpoint 1, [34m0x08048cd1[m in [33mmain[m ()
+$1 = 0x5a
+[Inferior 1 (process 6408) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6408/maps'
+[1m[31m$eax   [0m: 0x5a      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049bcd[m
+
+Breakpoint 1, [34m0x08049bcd[m in [33mmain[m ()
+$1 = 0x76
+[Inferior 1 (process 6427) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6427/maps'
+[1m[31m$eax   [0m: 0x76      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049c52[m
+
+Breakpoint 1, [34m0x08049c52[m in [33mmain[m ()
+$1 = 0x58
+[Inferior 1 (process 6446) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6446/maps'
+[1m[31m$eax   [0m: 0x58      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049035[m
+
+Breakpoint 1, [34m0x08049035[m in [33mmain[m ()
+$1 = 0x40
+[Inferior 1 (process 6465) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6465/maps'
+[1m[31m$eax   [0m: 0x40      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x804927a[m
+
+Breakpoint 1, [34m0x0804927a[m in [33mmain[m ()
+$1 = 0x6a
+[Inferior 1 (process 6484) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6484/maps'
+[1m[31m$eax   [0m: 0x6a      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048a4d[m
+
+Breakpoint 1, [34m0x08048a4d[m in [33mmain[m ()
+$1 = 0x7e
+[Inferior 1 (process 6503) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6503/maps'
+[1m[31m$eax   [0m: 0x7e      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048dcd[m
+
+Breakpoint 1, [34m0x08048dcd[m in [33mmain[m ()
+$1 = 0x3d
+[Inferior 1 (process 6522) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6522/maps'
+[1m[31m$eax   [0m: 0x3d      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x80492b9[m
+
+Breakpoint 1, [34m0x080492b9[m in [33mmain[m ()
+$1 = 0x5d
+[Inferior 1 (process 6541) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6541/maps'
+[1m[31m$eax   [0m: 0x5d      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049a37[m
+
+Breakpoint 1, [34m0x08049a37[m in [33mmain[m ()
+$1 = 0x71
+[Inferior 1 (process 6560) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6560/maps'
+[1m[31m$eax   [0m: 0x71      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8049d55[m
+
+Breakpoint 1, [34m0x08049d55[m in [33mmain[m ()
+$1 = 0x29
+[Inferior 1 (process 6579) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[33m[*][0m Failed to read /proc/<PID>/maps, using GDB sections info: [Errno 2] No such file or directory: '/proc/6579/maps'
+[1m[31m$eax   [0m: 0x00000029
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+Breakpoint 1 at [34m0x8048b50[m
+
+Breakpoint 1, [34m0x08048b50[m in [33mmain[m ()
+$1 = 0x41
+[Inferior 1 (process 6598) exited normally]
+[ Legend: [1m[31mModified register[0m | [31mCode[0m | [32mHeap[0m | [35mStack[0m | [33mString[0m ]
+[1;38;5;240m───────────────────────────────────────────────────────────────── [0m[36mregisters[0m[1;38;5;240m ────[0m
+[1m[31m$eax   [0m: 0x41      
+[1m[31m[!][0m Command 'registers' failed to execute properly, reason: No registers.
+[1;38;5;240m───────────────────────────────────────────────────────────────────── [0m[36mstack[0m[1;38;5;240m ────[0m
+[1m[31m[!][0m Command 'context' failed to execute properly, reason: No frame is currently selected.
+quit
+Error detected on fd 0
+error detected on stdin

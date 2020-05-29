@@ -1,0 +1,4 @@
+browser bias:
+curl -A "Contiki/1.0" https://challenges.neverlanctf.com:1130/
+flag{8b1t_w3b}
+

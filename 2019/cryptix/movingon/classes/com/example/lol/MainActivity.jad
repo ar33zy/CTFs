@@ -1,0 +1,60 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: packimports(3) 
+
+package com.example.password;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+
+// Referenced classes of package com.example.password:
+//            Main2Activity
+
+public class MainActivity extends AppCompatActivity
+{
+
+    public MainActivity()
+    {
+    }
+
+    public void Click(View view)
+    {
+        ((ImageView)findViewById(0x7f070047)).setOnTouchListener(new android.view.View.OnTouchListener() {
+
+            public boolean onTouch(View view1, MotionEvent motionevent)
+            {
+                if(motionevent.getActionMasked() == 0)
+                {
+                    float f = motionevent.getX();
+                    float f1 = motionevent.getY();
+                    if(f < f1 && (double)f * 1.5D > (double)f1)
+                        getKey();
+                }
+                return false;
+            }
+
+            final MainActivity this$0;
+
+            
+            {
+                this$0 = MainActivity.this;
+                super();
+            }
+        });
+    }
+
+    void getKey()
+    {
+        startActivity(new Intent(getBaseContext(), com/example/password/Main2Activity));
+    }
+
+    protected void onCreate(Bundle bundle)
+    {
+        super.onCreate(bundle);
+        setContentView(0x7f09001c);
+    }
+}

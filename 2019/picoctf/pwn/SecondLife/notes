@@ -1,0 +1,29 @@
+Same arbitrary write heap exploit - double free
+
+```
+   free(first); // first free
+   free(third);
+   fifth=malloc(128);
+   free(first); // freed pointer after being freed above
+```
+
+0x80497e8 <malloc+1119>    mov    DWORD PTR [eax+0xc], edx
+arbitrary write on eax+0xc which is the 2nd input - BBBB
+
+try to enter a valid address - maybe a heap address would work - use the leaked address
+
+try to read about double free
+
+eax+0xc = 2nd input 1st 4 bytes
+edx = 2nd input 2nd 4 bytes
+
+send exit got address + shellcode location?
+
+remember - fgets(first, LINE_BUFFER_SIZE, stdin);
+We can write a shellcode on the first chunk and point its address to exit got
+
+exit got - 0x804d02c
+
+same idea with afterlife
+
+flag: picoCTF{HeapHeapFlag_2e4238bf}

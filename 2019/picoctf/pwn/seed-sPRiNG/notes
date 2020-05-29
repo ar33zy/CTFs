@@ -1,0 +1,32 @@
+Notes:
+- need to defeat srand
+- time(0) is called
+- the output of time(0) is used as the argv[1] of srand
+
+same seed == same rand()
+
+Two different initializations with the same seed will generate the same succession of results in subsequent calls to rand.
+
+Need to confirm via dynamic debugging
+
+srand(time(0))
+
+Solution:
+need to generate the same seed at the same time
+
+print rand()
+
+need to & 0xf the generated random int
+
+note: init seed only once
+
+Resources:
+http://www.cplusplus.com/reference/cstdlib/srand/
+https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/
+
+
+lol need to sync with the server since the binary runs via nc.
+Just run it inside the server to make the custom binary sync with the program.
+
+
+flag: picoCTF{pseudo_random_number_generator_not_so_random_454fbf9b8595fa66a87547e520351217}

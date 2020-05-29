@@ -1,0 +1,43 @@
+cracker_barrel
+- starwars
+- secret message this is
+-
+# check_3 
+0x0000555555555590 <+32>:	mov    DWORD PTR [rbp-0x40],0x7a
+0x0000555555555597 <+39>:	mov    DWORD PTR [rbp-0x3c],0x21
+0x000055555555559e <+46>:	mov    DWORD PTR [rbp-0x38],0x21
+0x00005555555555a5 <+53>:	mov    DWORD PTR [rbp-0x34],0x62
+0x00005555555555ac <+60>:	mov    DWORD PTR [rbp-0x30],0x36
+0x00005555555555b3 <+67>:	mov    DWORD PTR [rbp-0x2c],0x7e
+0x00005555555555ba <+74>:	mov    DWORD PTR [rbp-0x28],0x77
+0x00005555555555c1 <+81>:	mov    DWORD PTR [rbp-0x24],0x6e
+0x00005555555555c8 <+88>:	mov    DWORD PTR [rbp-0x20],0x26
+0x00005555555555cf <+95>:	mov    DWORD PTR [rbp-0x1c],0x60
+
+(x ^ 0x14) - 0x2
+
+''.join([chr((x^0x14)-0x2) for x in [0x7a,0x21,0x21,0x62,0x36,0x7e,0x77,0x6e,0x26,0x60]])
+
+l33t hax0r
+
+flag: auctf{w3lc0m3_to_R3_1021}
+
+mobile0 - auctf{m0b1le_r3v3rs1ng!!}
+
+mobile1 - auctf{w3lc0m3_to_R3_1021}
+
+sora notes:
+length - 16
+must match - aQLpavpKQcCVpfcg
+
+stored string
+- shl <<< 0x3
+- +0x13
+- *0x4325c53f
+b*0x55555555534e
+
+mrgameandwatch:
+- masterchief
+- princesspeach
+- solidsnake
+flag: auctf{If_u_h8_JAVA_and_@SM_try_c_sharp_2922}

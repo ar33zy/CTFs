@@ -1,0 +1,7 @@
+# just ssh into server
+flag1: auctf{W3lcoM3_2_da_C7F}
+
+# cat * | grep YXVj 2>/dev/null
+flag2: auctf{g0tt@_muv_fas7}
+
+# brute force using a single 5 digit number

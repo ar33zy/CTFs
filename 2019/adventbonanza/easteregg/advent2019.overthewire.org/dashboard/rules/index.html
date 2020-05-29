@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>OverTheWire Advent Bonanza 2019</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="/static/css/materialize.min.css">
+		<link rel="stylesheet" media="screen" href="/static/css/app.css">
+		<link rel="stylesheet" media="screen" href="/static/css/doors.css">
+		<link rel="stylesheet" media="screen" href="/static/css/quotes.css">
+		<link rel="stylesheet" media="screen" href="/static/css/advent.css">
+		<link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+		<script src="/static/js/moment.js"></script>
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/materialize.min.js"></script>
+		<script src="/static/js/ctf.js"></script>
+                <script data-require="angular.js@1.6.5" data-semver="1.6.5" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+                <script data-require="angular-animate@1.6.*" data-semver="1.6.5" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"></script>
+                <script data-require="angular-touch@1.6.*" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-touch.js"></script>
+                <script data-require="ui-bootstrap@*" data-semver="2.5.0" src="https://cdn.rawgit.com/angular-ui/bootstrap/gh-pages/ui-bootstrap-tpls-2.5.0.js"></script>
+                <script src="/static/js/app.js"></script>
+                <script src="/static/js/modernizr.js"></script>
+                <script src="/static/js/site.js"></script>
+	</head>
+	</body>
+	
+		<div class="row dashboard-wrapper-header">
+			<div class="col s12 valign-wrapper" style="justify-content:center;">
+				<a href="#" data-activates="slide-out" class="pulse no-outline button-collapse"><i style="font-size:22px;padding-top: 5px;" class="small white-text material-icons">menu</i></a>
+				<a class="hide-on-large-only" href="/dashboard"><span class="no-outline header-text header-content white-text roboto-200 roboto no-margin center-align">OTW Advent <span class="colored-text">2019</span></span></a>
+				<a class="hide-on-med-and-down" href="/dashboard"><span class="no-outline header-text header-content white-text roboto-200 roboto no-margin center-align">OverTheWire Advent Bonanza <span class="colored-text">2019</span></span></a>
+				
+				
+					
+						<a href="https://www.f-secure.com"><img title="F-Secure" style="height:22px;!important" class="no-outline minor-pad xxxsponsor sponsor-header" src="/static/img/sponsors/f-secure.png" /></a>
+					
+						
+				
+				<div class="hide-on-small-only fade-roulette">
+					
+						<a href="https://pwny.racing/"><img title="Pwny Racing" style="height:22px;!important" class="no-outline minor-pad xxxsponsor sponsor-header" src="/static/img/sponsors/pwnyracing.png" /></a>
+					
+						<a href="https://elakkod.se/"><img title="Elakkod" style="height:22px;!important" class="no-outline minor-pad xxxsponsor sponsor-header" src="/static/img/sponsors/elakkod.png" /></a>
+					
+				</div>		
+						
+			</div>
+		</div>
+
+<script>initializeSponsors();</script>
+
+	<div class="row dashboard-container" id="dashboard" >
+			
+<!--
+<div class="hide-on-med-and-up show-on-small">small</div>
+<div class="hide-on-small-only hide-on-large-only show-on-medium">medium</div>
+<div class="hide-on-med-and-down show-on-large">large</div>
+-->
+<div class="container" style="width:95%">
+  <div class="info-box">
+    <div style="padding:15px !important" class="ctf-widget-left ctf-widget-transparent widget-pad-small minor-pad">
+    <a href="https://overthewire.org">
+    <img class="achievement-border text-center circle" style="width:110px;" src="/static/img/logo.png" />
+    </a>
+    <lu>
+    <li class="no-dots" style="margin-bottom:4px;">
+        <span class="max-width white-text center-align">Contact:</span>
+    </li>      
+    <li class="no-dots" style="margin-bottom:4px;">
+        <a href="https://discord.gg/Jevyrju">
+        <i class="colored-text tiny material-icons" style="margin-right:5px;">forum</i>Discord
+        </a>
+    </li>
+    <li class="no-dots" style="margin-bottom:4px;">
+        <a href="https://kiwiirc.com/nextclient/#irc://irc.overthewire.org:+6697/#advent">
+        <i class="colored-text tiny material-icons" style="margin-right:5px;">forum</i>#advent @ irc.overthewire.org
+        </a>
+    </li>
+<!--
+    <li class="no-dots" style="margin-bottom:4px;">
+        <a href="mailto:advent2019@overthewire.org">
+        <i class="colored-text tiny material-icons" style="margin-right:5px;">local_post_office</i>advent2019@overthewire.org
+        </a>
+    </li>
+-->
+    <li class="no-dots" style="margin-bottom:4px;">
+        <a href="https://twitter.com/OverTheWireCTF">
+        <i class="colored-text tiny material-icons" style="margin-right:5px;">chat_bubble</i>@OverTheWireCTF
+        </a>
+    </li>
+    <li class="no-dots" style="margin-bottom:4px;">
+        <a href="https://overthewire.org">
+        <i class="colored-text tiny material-icons" style="margin-right:5px;">language</i>https://overthewire.org
+        </a>
+    </li>
+    </lu>
+</div>
+  </div>
+  <div class="info-box">
+          <div class="ctf-widget-large-top ctf-widget-transparent widget-pad-small" style="padding:20px !important; margin-bottom:30px !important;">
+        <div class="row">
+          <div class="white-text">
+	    <h2>Rules</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <lu>
+              <li class="white-text">
+              Scoring is <span class="default-text tooltipped" data-position="top" data-tooltip="35C3 CTF Formula: int(round(chall.min_points + (chall.max_points - chall.min_points) / (1 + (max(0, chall.solves - 1) / 11.92201) ** 1.206069)))">dynamic</span>, the points of a challenge decrease per solve
+              </li>            
+              <li class="white-text">
+              The flag format is: <span class="default-text no-thicc no-pad">AOTW{133t_speak}</span> unless specified otherwise
+              </li>   
+              <li class="white-text">
+              <span class="default-text">DO NOT</span> share flags, cheat or spoil challenges in the chat or elsewhere
+              </li>   
+              <li class="white-text">
+              <span class="default-text">DO NOT</span> use any vulnerability scanners / dirbuster / bruteforce on services. It will not get you flags
+              </li>
+              <li class="white-text">
+              One account per team. Each group of people participating should use exactly one account for submitting flags. Creating multiple accounts for any reason is not allowed.
+              </li>
+              <li class="white-text">
+              Organizers decisions are final. There might arise situations which are not covered by these rules in which case the decision is up to the organisers and any decisions made are final.
+              </li>
+              <li class="white-text">
+              <span>Help can be found on</span> <a href="https://discord.gg/Jevyrju"><span class="default-text">Discord</span></a> or IRC. Challenge specific questions should be directed at the author of the challenge
+              </li>
+            </lu>
+          </div>
+        </div>
+      </div>
+<script>
+	initializeTimer();
+</script>
+  </div>
+</div>
+
+	</div>
+	
+  <ul id="slide-out" class="side-nav">
+    <li>
+      <div class="user-view">
+        <a href="https://advent2019.overthewire.org"><img class="achievement-border circle" src="/static/img/logo.png" target="_blank" rel="noopener noreferrer"></a>
+        <h5 class="white-text roboto-300">OverTheWire Advent Bonanza</h5>
+      </div>
+    </li>
+    <li class="white-text roboto-300">CTF Menu</li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="/dashboard/scoreboard/">Scoreboard</a></li>
+    
+    
+      <li class="side-nav-menu"><a class="white-text roboto-300" href="/">Login</a></li>
+    
+    
+    <li class="white-text roboto-300">Information</li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="/dashboard/information/">About</a></li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="/dashboard/sponsors/" target="_blank" rel="noopener noreferrer">Sponsors</a></li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="/dashboard/rules/">Rules</a></li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="https://discord.gg/Jevyrju" target="_blank" rel="noopener noreferrer">Discord</a></li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="https://kiwiirc.com/nextclient/#irc://irc.overthewire.org:+6697/#advent" target="_blank" rel="noopener noreferrer">IRC</a></li>
+    <li class="side-nav-menu">
+      <div style="margin-left:18px;" class="switch">
+        <label>
+          <input id="gfx-switch" type="checkbox" checked>
+          <span class="lever"></span>
+          EFFECTS
+        </label>
+      </div>
+    </li>
+  </ul>
+        
+<script>
+  $(".button-collapse").sideNav();
+</script>
+	
+		
+	
+		
+
+	</body>
+</html>

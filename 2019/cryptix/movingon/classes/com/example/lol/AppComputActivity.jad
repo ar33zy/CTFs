@@ -1,0 +1,38 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: packimports(3) 
+
+package com.example.password;
+
+import android.support.v7.app.AppCompatActivity;
+
+public abstract class AppComputActivity extends AppCompatActivity
+{
+
+    public AppComputActivity()
+    {
+        b = 29;
+        a = 57;
+    }
+
+    int obf(String s)
+    {
+        for(int i = 0; i < s.length();)
+        {
+            char c = s.charAt(i);
+            if(a * c + b == key[i])
+                i++;
+            else
+                return 0;
+        }
+
+        return 1;
+    }
+
+    int a;
+    int b;
+    int key[] = {
+        4817, 6356, 3107, 6014, 2993, 6584, 5444, 2195, 5444, 4817, 
+        6527, 6014, 3050
+    };
+}

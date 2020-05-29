@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>OverTheWire Advent Bonanza 2019</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="/static/css/materialize.min.css">
+		<link rel="stylesheet" media="screen" href="/static/css/app.css">
+		<link rel="stylesheet" media="screen" href="/static/css/doors.css">
+		<link rel="stylesheet" media="screen" href="/static/css/quotes.css">
+		<link rel="stylesheet" media="screen" href="/static/css/advent.css">
+		<link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+		<script src="/static/js/moment.js"></script>
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/materialize.min.js"></script>
+		<script src="/static/js/ctf.js"></script>
+                <script data-require="angular.js@1.6.5" data-semver="1.6.5" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+                <script data-require="angular-animate@1.6.*" data-semver="1.6.5" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"></script>
+                <script data-require="angular-touch@1.6.*" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-touch.js"></script>
+                <script data-require="ui-bootstrap@*" data-semver="2.5.0" src="https://cdn.rawgit.com/angular-ui/bootstrap/gh-pages/ui-bootstrap-tpls-2.5.0.js"></script>
+                <script src="/static/js/app.js"></script>
+                <script src="/static/js/modernizr.js"></script>
+                <script src="/static/js/site.js"></script>
+	</head>
+	</body>
+	
+		<div class="row dashboard-wrapper-header">
+			<div class="col s12 valign-wrapper" style="justify-content:center;">
+				<a href="#" data-activates="slide-out" class="pulse no-outline button-collapse"><i style="font-size:22px;padding-top: 5px;" class="small white-text material-icons">menu</i></a>
+				<a class="hide-on-large-only" href="/dashboard"><span class="no-outline header-text header-content white-text roboto-200 roboto no-margin center-align">OTW Advent <span class="colored-text">2019</span></span></a>
+				<a class="hide-on-med-and-down" href="/dashboard"><span class="no-outline header-text header-content white-text roboto-200 roboto no-margin center-align">OverTheWire Advent Bonanza <span class="colored-text">2019</span></span></a>
+				
+				
+					
+						<a href="https://www.f-secure.com"><img title="F-Secure" style="height:22px;!important" class="no-outline minor-pad xxxsponsor sponsor-header" src="/static/img/sponsors/f-secure.png" /></a>
+					
+						
+				
+				<div class="hide-on-small-only fade-roulette">
+					
+						<a href="https://pwny.racing/"><img title="Pwny Racing" style="height:22px;!important" class="no-outline minor-pad xxxsponsor sponsor-header" src="/static/img/sponsors/pwnyracing.png" /></a>
+					
+						<a href="https://elakkod.se/"><img title="Elakkod" style="height:22px;!important" class="no-outline minor-pad xxxsponsor sponsor-header" src="/static/img/sponsors/elakkod.png" /></a>
+					
+				</div>		
+						
+			</div>
+		</div>
+
+<script>initializeSponsors();</script>
+
+	<div class="row dashboard-container" id="dashboard" >
+			
+<!--
+<div class="hide-on-med-and-up show-on-small">small</div>
+<div class="hide-on-small-only hide-on-large-only show-on-medium">medium</div>
+<div class="hide-on-med-and-down show-on-large">large</div>
+-->
+<div class="container" style="width:95%">
+  <div class="info-box">
+
+    <div style="padding:15px !important" class="widget-pad-small minor-pad" id="data-content">
+	
+<div class="ctf-widget-left ctf-widget-transparent">
+  <div class="row">
+      <div class="ctf-login-header">
+          <span id="login-tab" class="noselect  colored-text ctf-login-item">Login</span>
+          <span class="white-text"> | </span>
+          <span id="register-tab" class="noselect white-text ctf-login-item">Register</span>
+          <span class="white-text"> | </span>
+          <span id="forgot-password-tab" class="noselect white-text ctf-login-item">ResetPass</span>
+      </div>
+      <form autocomplete="off" autocomplete="false" autocomplete="disabled" style="padding: 15px">
+          <div class="input-field no-thicc" style="margin-bottom: 15px">
+            <input id="login-team" type="text" placeholder="Team name or e-mail address">
+            <label class="active" for="login-team">Team</label>
+          </div>
+          <div class="input-field no-thicc">
+            <input id="login-password" type="password" placeholder="" label="Password">
+            <label class="active">Password</label>
+          </div>  
+        <div class="row no-thicc text-center">
+              <div class="waves-effect waves-light btn-flat" id="login-button" >Login</div>
+        </div>
+      </form>
+
+  </div>
+</div>
+
+<script>
+    $(document).keypress(function(e) {
+        if(e.which == 13) {
+            login();
+        }
+    });
+</script>
+
+</div>
+
+
+  </div>
+  <div class="info-box" style="flex:1">
+          <div class="ctf-widget-large-top ctf-widget-transparent widget-pad-small" style="padding:20px !important; margin-bottom:30px !important;">
+        <div class="row">
+          <div class="col s4 white-text">
+	  <img class="responsive-img" style="margin-top:-20px;" src="/static/img/hanging-santa.png" />
+	</div>
+          <div class="col s8 white-text">
+<p class="speech-bubble">
+<span class="hohoho">Ho ho ho!</span><br><br>
+It's that time of year again where many people count down the days to Christmas.
+<br><br>
+In the spirit of an open and friendly environment for beginners and experts alike to
+apply and hone their skills, this holiday season we at OverTheWire once again treat you to
+<br><br>
+<span style="font-size: 150%;" class="colored-text">The OverTheWire Advent Bonanza CTF!</span>
+</p>
+
+<p class="speech-bubble">
+Every day of the advent season, you will be greeted with a new treat in the
+form of a challenge. You can compete as a team and there will be secrets and
+surprises littered throughout. Sign up your team, join us on
+<a href="https://discord.gg/Jevyrju"><span class="default-text">Discord</span></a> (or IRC)
+and follow the updates on twitter <a href="https://twitter.com/OverTheWireCTF">@OverTheWireCTF</a>. 
+</p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s2">
+            <span class="white-text no-margin roboto-400 info-title">About:</span>
+          </div>
+          <div class="col s10 white-text">
+OverTheWire (OTW) is the oldest hacker wargame community on the internet. 
+It boasts several pwn2own winners amongst its alumni. The goal of OTW 
+is to provide an environment to learn and practice security and coding 
+principles through a hands on approach. 
+
+Read <a href="http://www.phrack.org/issues/69/16.html">Phrack Issue 0x45</a> for a 
+historical perspective on how we came to be. You are free to drop in any time 
+at <a href="http://overthewire.org">http://overthewire.org</a> as well. 
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s2">
+            <span class="white-text no-margin roboto-400 info-title">When:</span>
+          </div>
+          <div class="col s10">
+            <span class="white-text">December 1st, 12:00 UTC - December 26th 2019, 12:00 UTC</span><br>
+            <span class="white-text">The CTF 
+          
+          
+            is </span><span class="colored-text">running right now!</span>
+          
+          
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s2">
+            <span class="white-text no-margin roboto-400 info-title">Format:</span>
+          </div>
+          <div class="col s10">
+            <span class="default-text">Online </span><span class="white-text">Jeopardy, Team-based</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s2">
+            <span class="white-text no-margin roboto-400 info-title">Status:</span>
+          </div>
+          <div id="timer" time="2019-12-01 12:00" class="default-text col s10">
+            1407<span class="white-text"> teams registered.</span>
+          </div>
+        </div>
+      </div>
+<script>
+	initializeTimer();
+</script>
+
+
+  </div>
+</div>
+
+	</div>
+	
+  <ul id="slide-out" class="side-nav">
+    <li>
+      <div class="user-view">
+        <a href="https://advent2019.overthewire.org"><img class="achievement-border circle" src="/static/img/logo.png" target="_blank" rel="noopener noreferrer"></a>
+        <h5 class="white-text roboto-300">OverTheWire Advent Bonanza</h5>
+      </div>
+    </li>
+    <li class="white-text roboto-300">CTF Menu</li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="/dashboard/scoreboard/">Scoreboard</a></li>
+    
+    
+      <li class="side-nav-menu"><a class="white-text roboto-300" href="/">Login</a></li>
+    
+    
+    <li class="white-text roboto-300">Information</li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="/dashboard/information/">About</a></li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="/dashboard/sponsors/" target="_blank" rel="noopener noreferrer">Sponsors</a></li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="/dashboard/rules/">Rules</a></li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="https://discord.gg/Jevyrju" target="_blank" rel="noopener noreferrer">Discord</a></li>
+    <li class="side-nav-menu"><a class="white-text roboto-300" href="https://kiwiirc.com/nextclient/#irc://irc.overthewire.org:+6697/#advent" target="_blank" rel="noopener noreferrer">IRC</a></li>
+    <li class="side-nav-menu">
+      <div style="margin-left:18px;" class="switch">
+        <label>
+          <input id="gfx-switch" type="checkbox" checked>
+          <span class="lever"></span>
+          EFFECTS
+        </label>
+      </div>
+    </li>
+  </ul>
+        
+<script>
+  $(".button-collapse").sideNav();
+</script>
+	
+		
+	
+		
+
+	</body>
+</html>

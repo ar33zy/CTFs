@@ -1,0 +1,4 @@
+$ hg id 
+6d3a96d7f2f4+ FIREFOX_NIGHTLY_72_END
+$ hg paths
+default = https://hg.mozilla.org/mozilla-central

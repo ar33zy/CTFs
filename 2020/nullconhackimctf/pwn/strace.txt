@@ -1,0 +1,7 @@
+root@056084cf6080:/strace# git remote -v
+origin	https://github.com/strace/strace.git (fetch)
+origin	https://github.com/strace/strace.git (push)
+root@056084cf6080:/strace# git log -1 --stat | head -n 4
+commit ce2c968a614ae2a3cf2354620b3b8200f003e87c
+Author: Dmitry V. Levin <ldv@altlinux.org>
+Date:   Fri Jan 17 01:01:21 2020 +0000

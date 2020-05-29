@@ -1,0 +1,33 @@
+used curl to hit challenge-zero site, got multiple strings on #
+got 5 unique strings, just pulled first 5
+decoded base64 - got uuencoded string
+
+decode uuencoded file - out
+got boot.bin by using webutils
+http://www.webutils.pl/index.php?idx=uu
+
+https://github.com/VoidHack/write-ups/tree/master/Square%20CTF%202017/reverse/floppy
+hint from front page makes sense on target remote localhost:1234
+
+https://en.wikipedia.org/wiki/INT_16H
+
+
+breakpoints
+0x7c3c:	int    0x16
+*0x7c2a
+0x3025323762271548
+
+
+x/300xi $pc-0xea
+
+all cm
+b *0x7c3e
+b *0x7c42
+b *0x7c46
+b *0x7c5c
+b *0x7cd7
+b *0x7d81
+b *0x7da3
+b *0x7dda
+b *0x7de6
+
